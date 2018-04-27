@@ -1,0 +1,1 @@
+Warning: Data demeaning selected, but at least one design column has non-zero mean - therefore invoking automatic demeaning of design matrix

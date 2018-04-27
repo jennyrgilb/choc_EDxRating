@@ -1,3 +1,5 @@
+#!/bin/bash
+##
 #SBATCH -N 1
 #SBATCH -c 1
 #SBATCH -t 5:00:00
@@ -10,5 +12,5 @@
 #module load intelfort/14.0.3 intelc/14.0.3 netcdf/4.1.3_intel-14.0.3 openmpi/1.8.1_intel-14.0.3_ofed-3.1
 #module load matlab/2015b
 # Run your executable
-/projects/niblab/modules/software/fsl/5.0.10/bin/randomise -i /projects/niblab/data/eric_data/W1/imagine/level1_grace_edit/cs${SLURM_ARRAY_TASK_ID}++.feat/filtered_func_data.nii.gz -o /projects/niblab/data/eric_data/W1/imagine/level3_appEDxRate_randomised -d /projects/niblab/data/eric_data/design_files/imagine/EDxRate/design3_appEDxRate.mat -t /projects/niblab/data/eric_data/design_files/imagine/EDxRate/design3_appEDxRate.con -m /projects/niblab/data/eric_data/W1/imagine/level3_appEDxRate.gfeat/cope6.feat/mask.nii.gz -n 5000 -D -T
+/projects/niblab/modules/software/fsl/5.0.10/bin/randomise -i /projects/niblab/data/eric_data/W1/imagine/level3_appEDxRate++.gfeat/cope6.feat/filtered_func_data.nii.gz -o /projects/niblab/data/eric_data/W1/imagine/level3_appEDxRate_randomised -d /projects/niblab/data/eric_data/design_files/imagine/EDxRate/design3_baseline_appEDxRate.mat -t /projects/niblab/data/eric_data/design_files/imagine/EDxRate/design3_baseline_appEDxRate.con -m /projects/niblab/data/eric_data/W1/imagine/level3_appEDxRate++.gfeat/cope6.feat/mask.nii.gz -n 5000 -D -T
 
