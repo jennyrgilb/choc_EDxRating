@@ -44,9 +44,9 @@ for dir in glob.glob('/projects/niblab/data/eric_data/W1/imagine/level1_grace_ed
 			protect = protect.strip('\n')
 			BMIintercept = line2[4]
 			BMIintercept = BMIintercept.strip('\n')
-			BMIslope_prone = line2[4]
+			BMIslope_prone = line2[5]
                         BMIslope_prone = BMIslope_prone.strip('\n')
-                        BMIslope_protect = line2[5]
+                        BMIslope_protect = line2[6]
                         BMIslope_protect = BMIslope_protect.strip('\n')
 #			print(name2+' is '+prone+' for prone group ,and is '+protect+' for protect group, and a BMI slope of '+BMIslope+')
 			if fnmatch.fnmatch(name2, sub):

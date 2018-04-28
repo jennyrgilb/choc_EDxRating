@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+#SBATCH -N 1
+#SBATCH -c 1
+#SBATCH -t 2:30:00
+###################
+## %A == SLURM_ARRAY_JOB_ID
+## %a == SLURM_ARRAY_TASK_ID 
+#SBATCH -o feat3ED_groups.txt
+#SBATCH -e feat3ED_gropus.txt
+#SBATCH -C "croatan"
+#module load intelfort/14.0.3 intelc/14.0.3 netcdf/4.1.3_intel-14.0.3 openmpi/1.8.1_intel-14.0.3_ofed-3.1
+#module load matlab/2015b
+# Run your executable
+/projects/niblab/modules/software/fsl/5.0.10/bin/feat /projects/niblab/data/eric_data/W1/imagine/level3_ED_groups.gfeat/design.fsf
